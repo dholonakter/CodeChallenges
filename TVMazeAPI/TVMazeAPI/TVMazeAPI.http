@@ -1,0 +1,6 @@
+@TVMazeAPI_HostAddress = http://localhost:5272
+
+GET {{TVMazeAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

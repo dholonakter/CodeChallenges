@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\dholo\\source\\repos\\TVMazeAPI\\TVMazeAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AB2685B8-869B-4EF3-83E0-11FC0AA50551}|TVMazeAPI.csproj|c:\\users\\dholo\\source\\repos\\tvmazeapi\\tvmazeapi\\data\\tvmazeapicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB2685B8-869B-4EF3-83E0-11FC0AA50551}|TVMazeAPI.csproj|solutionrelative:data\\tvmazeapicontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TVMazeAPIContext.cs",
+              "DocumentMoniker": "C:\\Users\\dholo\\source\\repos\\TVMazeAPI\\TVMazeAPI\\Data\\TVMazeAPIContext.cs",
+              "RelativeDocumentMoniker": "Data\\TVMazeAPIContext.cs",
+              "ToolTip": "C:\\Users\\dholo\\source\\repos\\TVMazeAPI\\TVMazeAPI\\Data\\TVMazeAPIContext.cs",
+              "RelativeToolTip": "Data\\TVMazeAPIContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-16T10:55:45.28Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
