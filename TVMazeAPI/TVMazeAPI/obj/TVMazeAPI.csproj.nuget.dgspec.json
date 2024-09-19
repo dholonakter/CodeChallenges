@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dholo\\source\\repos\\TVMazeAPI\\TVMazeAPI\\TVMazeAPI.csproj": {}
+    "C:\\Users\\dholo\\OneDrive\\Desktop\\CodeChallenges\\TVMazeAPI\\TVMazeAPI\\TVMazeAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dholo\\source\\repos\\TVMazeAPI\\TVMazeAPI\\TVMazeAPI.csproj": {
+    "C:\\Users\\dholo\\OneDrive\\Desktop\\CodeChallenges\\TVMazeAPI\\TVMazeAPI\\TVMazeAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dholo\\source\\repos\\TVMazeAPI\\TVMazeAPI\\TVMazeAPI.csproj",
+        "projectUniqueName": "C:\\Users\\dholo\\OneDrive\\Desktop\\CodeChallenges\\TVMazeAPI\\TVMazeAPI\\TVMazeAPI.csproj",
         "projectName": "TVMazeAPI",
-        "projectPath": "C:\\Users\\dholo\\source\\repos\\TVMazeAPI\\TVMazeAPI\\TVMazeAPI.csproj",
+        "projectPath": "C:\\Users\\dholo\\OneDrive\\Desktop\\CodeChallenges\\TVMazeAPI\\TVMazeAPI\\TVMazeAPI.csproj",
         "packagesPath": "C:\\Users\\dholo\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dholo\\source\\repos\\TVMazeAPI\\TVMazeAPI\\obj\\",
+        "outputPath": "C:\\Users\\dholo\\OneDrive\\Desktop\\CodeChallenges\\TVMazeAPI\\TVMazeAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dholo\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -56,13 +56,17 @@
               "target": "Package",
               "version": "[8.0.8, )"
             },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[8.0.4, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[6.4.0, )"
+              "version": "[6.7.3, )"
             }
           },
           "imports": [

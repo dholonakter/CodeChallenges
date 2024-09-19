@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TVMazeAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4fed02509fad5ebedd7a51f7d6c50b127f95af97")]
 [assembly: System.Reflection.AssemblyProductAttribute("TVMazeAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TVMazeAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
