@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{AB2685B8-869B-4EF3-83E0-11FC0AA50551}|TVMazeAPI.csproj|solutionrelative:controllers\\tvmazeapicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{AB2685B8-869B-4EF3-83E0-11FC0AA50551}|TVMazeAPI.csproj|c:\\users\\dholo\\onedrive\\desktop\\codechallenges\\tvmazeapi\\tvmazeapi\\model\\tvmaze.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AB2685B8-869B-4EF3-83E0-11FC0AA50551}|TVMazeAPI.csproj|solutionrelative:model\\tvmaze.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AB2685B8-869B-4EF3-83E0-11FC0AA50551}|TVMazeAPI.csproj|c:\\users\\dholo\\onedrive\\desktop\\codechallenges\\tvmazeapi\\tvmazeapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AB2685B8-869B-4EF3-83E0-11FC0AA50551}|TVMazeAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -22,11 +26,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "TVMaze.cs",
+              "DocumentMoniker": "C:\\Users\\dholo\\OneDrive\\Desktop\\CodeChallenges\\TVMazeAPI\\TVMazeAPI\\Model\\TVMaze.cs",
+              "RelativeDocumentMoniker": "Model\\TVMaze.cs",
+              "ToolTip": "C:\\Users\\dholo\\OneDrive\\Desktop\\CodeChallenges\\TVMazeAPI\\TVMazeAPI\\Model\\TVMaze.cs",
+              "RelativeToolTip": "Model\\TVMaze.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-21T09:56:44.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\dholo\\OneDrive\\Desktop\\CodeChallenges\\TVMazeAPI\\TVMazeAPI\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -34,8 +51,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-19T17:43:29.582Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-19T17:43:29.582Z"
             },
             {
               "$type": "Document",
@@ -45,14 +61,14 @@
               "RelativeDocumentMoniker": "Controllers\\TVMazeAPIController.cs",
               "ToolTip": "C:\\Users\\dholo\\OneDrive\\Desktop\\CodeChallenges\\TVMazeAPI\\TVMazeAPI\\Controllers\\TVMazeAPIController.cs",
               "RelativeToolTip": "Controllers\\TVMazeAPIController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAABIAAAA",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAFEAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-19T17:36:05.518Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "TVMazeAPIContext.cs",
               "DocumentMoniker": "C:\\Users\\dholo\\OneDrive\\Desktop\\CodeChallenges\\TVMazeAPI\\TVMazeAPI\\Data\\TVMazeAPIContext.cs",
               "RelativeDocumentMoniker": "Data\\TVMazeAPIContext.cs",
@@ -60,8 +76,7 @@
               "RelativeToolTip": "Data\\TVMazeAPIContext.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-16T10:55:45.28Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-16T10:55:45.28Z"
             }
           ]
         }
