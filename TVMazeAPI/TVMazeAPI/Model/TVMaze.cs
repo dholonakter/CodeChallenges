@@ -1,27 +1,35 @@
-﻿namespace TVMazeAPI.Model
+﻿using Newtonsoft.Json;
+
+namespace TVMazeAPI.Model
 {
-    public class TVMazeShows
+    public class TVMazeShow
     {
+        [JsonProperty("id")]
         public int ID { get; set; }
+
+        [JsonProperty("name")]
         public string Name { get; set; }
-        public Embedded Embedded { get; set; }
 
+        public List<Person> Cast { get; set; }
+    }
 
-    }
-    public class Embedded
-    {
-        public List<Cast> Casts { get; set; }
-    }
-    public class Cast
-    {
-        public List<Person> Persons { get; set; }
-    }
     public class Person
     {
+        [JsonProperty("id")]
         public int ID { get; set; }
+
+        [JsonProperty("name")]
         public string Name { get; set; }
-        public string  Birthday { get; set; }
 
+        [JsonProperty("birthday")]
+        public string Birthday { get; set; }
 
+        // Add other properties with [JsonProperty] attributes
+    }
+
+    public class CastInfo
+    {
+        [JsonProperty("person")]
+        public Person Person { get; set; }
     }
 }
