@@ -1,4 +1,8 @@
 
+using Microsoft.EntityFrameworkCore;
+using TVMazeAPI.Data;
+using TVMazeAPI.Service;
+
 namespace TVMazeAPI
 {
     public class Program
@@ -11,6 +15,10 @@ namespace TVMazeAPI
 
             builder.Services.AddControllers();
             builder.Services.AddHttpClient();
+            builder.Services.AddDbContext<TVMazeAPIContext>(options =>
+                options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
+            builder.Services.AddScoped<TVMazeService>();
+
 
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
             builder.Services.AddEndpointsApiExplorer();

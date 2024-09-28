@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System.Diagnostics.Metrics;
 
 namespace TVMazeAPI.Model
 {
@@ -9,22 +10,25 @@ namespace TVMazeAPI.Model
 
         [JsonProperty("name")]
         public string Name { get; set; }
-
+        [JsonProperty("person")]
+ 
         public List<Person> Cast { get; set; }
     }
 
-    public class Person
+
+    public partial class Person
     {
         [JsonProperty("id")]
-        public int ID { get; set; }
+        public long Id { get; set; }
+
 
         [JsonProperty("name")]
         public string Name { get; set; }
 
         [JsonProperty("birthday")]
-        public string Birthday { get; set; }
-
-        // Add other properties with [JsonProperty] attributes
+        public DateTimeOffset Birthday { get; set; }
+        // Foreign key to TVMazeShow
+        public int ShowId { get; set; }
     }
 
     public class CastInfo
