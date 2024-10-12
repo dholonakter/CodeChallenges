@@ -5,3 +5,6 @@
 /WebAppIdentity/.vs
 /WebAppIdentity/WebAppIdentity/bin/Debug/net8.0
 /WebAppIdentity/WebAppIdentity/obj
+/WebIdentityScaffold/WebIdentityScaffold/bin/Debug/net8.0
+/WebIdentityScaffold/WebIdentityScaffold/obj
+/WebIdentityScaffold/.vs/WebIdentityScaffold
