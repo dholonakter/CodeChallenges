@@ -9,6 +9,6 @@ namespace WebAppIdentity.Areas.Identity.Data;
 // Add profile data for application users by adding properties to the WebAppIdentityUser class
 public class WebAppIdentityUser : IdentityUser
 {
-
+    //hey dholon
 }
 
