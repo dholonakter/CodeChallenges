@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace OOP_Practice.Abstract;
 
-public class Shape
+public abstract class Shape
 {
+	public abstract double Area();
+
+	
 }

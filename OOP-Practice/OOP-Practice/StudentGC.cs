@@ -8,4 +8,18 @@ namespace OOP_Practice;
 
 public class StudentGC
 {
+    public string Name { get; set; }
+	public int Age { get; set; }
+    public StudentGC()
+    {
+        Console.WriteLine("Student created");
+    }
+	~StudentGC()
+	{
+		Console.WriteLine("Student destroyed");
+	}
+	public void Dispose()
+	{
+		Console.WriteLine("Student destroyed");
+	}
 }

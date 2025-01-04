@@ -1,4 +1,6 @@
-﻿using System;
+﻿using OOP_Practice.Abstract;
+using System;
+using System.Net.Http.Headers;
 using System.Runtime.InteropServices;
 
 namespace OOP_Practice;
@@ -7,6 +9,14 @@ public class Program
 {
 	static void Main(string[] args)
 	{
+		Library.AddBook();
+
+		Circle circle = new Circle { Radius = 5 };
+		Ractangle ractangle = new Ractangle { Height = 10, Width = 20 };
+		Console.WriteLine("Area of circle" + circle.Area());
+		Console.WriteLine("Area of ractangle" + ractangle.Area());
+
+
 		Person person1 = new Person("Dola", 20);
 		Console.WriteLine("Before Update" + person1.Age);
 		person1.UpdatePerson(person1);
@@ -16,13 +26,21 @@ public class Program
 		MathHelper.Divide(10, 2);
 		MathHelper.Multiply(10, 2);
 
-		Book book = new Book
+		Book book1 = new Book
 		{
 			Title = "Good book",
 			Author = "James clear",
 			Price = 20
 		};
-		Console.WriteLine("Book " + book.Title + "Author" + book.Author + "Price" + book.Price);
+		Console.WriteLine("Book " + book1.Title + "Author" + book1.Author + "Price" + book1.Price);
+
+		Book book2 = new Book(book1);
+		Console.WriteLine("Book " + book2.Title + "Author" + book2.Author + "Price" + book2.Price);
+
+
+		StudentGC gc = new StudentGC();
+		gc.Name = "Alice";
+		gc.Age = 20;
 
 		BankAccount account = new BankAccount("Dholon", 100);
 		account.Deposit(500);
@@ -62,5 +80,11 @@ public class Program
 		Console.WriteLine("person name " + person.Name + "person age " + person.Age);
 		person.SayHello();
 		person.CelebrateBirthday();
+
+		gc = null;
+		GC.Collect();
+		GC.WaitForPendingFinalizers();
+
+		Console.WriteLine("End of Main method");
 	}
 }

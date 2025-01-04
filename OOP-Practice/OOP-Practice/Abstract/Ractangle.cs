@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace OOP_Practice.Abstract;
 
-public class Circle: Shape
+public class Ractangle : Shape
 {
-    public double Radius { get; set; }
+    public double Width { get; set; }
+    public double Height { get; set; }
     public override double Area()
 	{
-		return Math.PI * Radius * Radius;
+        return Width * Height;
 	}
 }
