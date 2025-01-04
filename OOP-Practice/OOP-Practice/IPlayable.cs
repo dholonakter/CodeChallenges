@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP_Practice
+namespace OOP_Practice;
+
+public interface IPlayable
 {
-	public interface IPlayable
-	{
-		void Play();
-	}
+	void Play();
 }

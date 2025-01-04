@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP_Practice
+namespace OOP_Practice;
+
+public class Guitarist : IPlayable
 {
-	public class Guitarist:IPlayable
+	public void Play()
 	{
-		public void Play()
-		{
-            Console.WriteLine("Playing the guiter");
-        }
+		Console.WriteLine("Playing the guiter");
 	}
 }
