@@ -15,7 +15,6 @@ public class Person
 	{
 		get { return _name; }
 		private set { _name = value; }
-
 	}
 
 	public int Age
@@ -58,5 +57,9 @@ public class Person
 	{
 		Age += 1;
 		Console.WriteLine("Happy birthday, you are now " + Age + " years old");
+	}
+	public void UpdatePerson(Person person)
+	{
+		person.Age += 1;
 	}
 }
