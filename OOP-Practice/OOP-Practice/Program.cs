@@ -1,4 +1,8 @@
 ﻿using OOP_Practice.Abstract;
+using OOP_Practice.Constructor;
+using OOP_Practice.Encapsulation;
+using OOP_Practice.Inheritance;
+using OOP_Practice.Polymorphism;
 using System;
 using System.Net.Http.Headers;
 using System.Runtime.InteropServices;
@@ -9,6 +13,48 @@ public class Program
 {
 	static void Main(string[] args)
 	{
+		Manager manager1 = new Manager();
+		manager1.SayHello();
+		manager1.Work();
+		manager1.LeadTeam();
+		Vehicle vehicle = new Vehicle();
+		vehicle.StartEngine();
+		ElectricCar electricCar = new ElectricCar();
+		electricCar.StartEngine();
+
+		Customer customer = new Customer();
+		customer.BankAccounts = new List<BankAccount>()
+		{
+			 new BankAccount("dola",100),
+			 new BankAccount("saki",50),
+			 new BankAccount("laki",60),
+			 new BankAccount("taki",70),
+		};
+
+		customer.Withdraw(20, customer.BankAccounts[0]);
+		customer.Deposit(50, customer.BankAccounts[1]);
+
+		foreach (var item in customer.BankAccounts)
+		{
+			Console.WriteLine(item.AccountHolder + item.Balance);
+        }
+
+
+		Department department = new Department("Scherpthe");
+		department.PrintName();
+		Manager manager = new Manager();
+		manager.EmplyeeName = "Dola";
+		manager.EmplyeeID = 10;
+		manager.EmployeeInfo();
+
+		Dog dog = new Dog("Rox");
+		dog.Bark();
+
+		Product product = new Product("artcle1", 20);
+		Product product1 = new Product("artcle1", 1, 21);
+		Product product2 = new Product();
+		product2.ProductName = "article3";
+
 		Library.AddBook();
 
 		Circle circle = new Circle { Radius = 5 };

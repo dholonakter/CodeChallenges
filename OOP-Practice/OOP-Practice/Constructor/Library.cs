@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP_Practice;
+namespace OOP_Practice.Constructor;
 
 public static class Library
 {
@@ -16,7 +16,7 @@ public static class Library
     public static void AddBook()
     {
         TotalBooks++;
-        Console.WriteLine("Total number of Books " +TotalBooks);
+        Console.WriteLine("Total number of Books " + TotalBooks);
     }
 
 }

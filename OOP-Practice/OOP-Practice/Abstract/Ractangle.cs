@@ -8,10 +8,10 @@ namespace OOP_Practice.Abstract;
 
 public class Ractangle : Shape
 {
-    public double Width { get; set; }
-    public double Height { get; set; }
-    public override double Area()
+	public double Width { get; set; }
+	public double Height { get; set; }
+	public override double Area()
 	{
-        return Width * Height;
+		return Width * Height;
 	}
 }

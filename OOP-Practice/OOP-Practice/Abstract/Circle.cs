@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 
 namespace OOP_Practice.Abstract;
 
-public class Circle: Shape
+public class Circle : Shape
 {
-    public double Radius { get; set; }
-    public override double Area()
+	public double Radius { get; set; }
+	public override double Area()
 	{
 		return Math.PI * Radius * Radius;
 	}

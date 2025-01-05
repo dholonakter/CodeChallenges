@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP_Practice;
+namespace OOP_Practice.Inheritance;
 
-public interface IPlayable
+public class Company
 {
-	void Play();
+    private protected string CompanyName { get; set; }
 }

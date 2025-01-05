@@ -4,17 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP_Practice;
+namespace OOP_Practice.Constructor;
 
 public class Book
 {
-	public string Title { get; set; }
-	public string Author { get; set; }
-	public decimal Price { get; set; }
+    public string Title { get; set; }
+    public string Author { get; set; }
+    public decimal Price { get; set; }
 
     public Book()
     {
-        
+
     }
     public Book(string title, string author, decimal price)
     {
@@ -22,13 +22,13 @@ public class Book
         Author = author;
         Price = price;
     }
-    public Book( Book book)
+    public Book(Book book)
     {
-        this.Title = book.Title;
-        this.Author = book.Author;
-        this.Price = book.Price;
+        Title = book.Title;
+        Author = book.Author;
+        Price = book.Price;
     }
 
-	
+
 
 }

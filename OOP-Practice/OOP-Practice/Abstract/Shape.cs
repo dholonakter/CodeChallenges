@@ -9,6 +9,5 @@ namespace OOP_Practice.Abstract;
 public abstract class Shape
 {
 	public abstract double Area();
-
-	
 }
+
