@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP_Practice.Inheritance;
+namespace OOP_Practice.Abstract.Shapes;
 
-public class Company
+public interface IShape
 {
-    private protected string CompanyName { get; set; }
+	public void GetInfo();
 }

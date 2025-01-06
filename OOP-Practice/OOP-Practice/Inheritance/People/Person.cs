@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP_Practice.Inheritance;
+namespace OOP_Practice.Inheritance.People;
 
 public class Person
 {
@@ -50,8 +50,13 @@ public class Person
 
 	public virtual void SayHello()
 	{
-		Console.WriteLine("Hello my name is " + Name +"my age is" +Age);
+		Console.WriteLine("Hello my name is " + Name + "my age is" + Age);
 	}
+
+	public virtual void Introduce()
+	{
+        Console.WriteLine("Hello");
+    }
 
 	public void CelebrateBirthday()
 	{

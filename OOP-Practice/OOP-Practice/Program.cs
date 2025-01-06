@@ -1,7 +1,11 @@
-﻿using OOP_Practice.Abstract;
+﻿using OOP_Practice.Abstract.Shapes;
 using OOP_Practice.Constructor;
+using OOP_Practice.Constructor.Books;
 using OOP_Practice.Encapsulation;
-using OOP_Practice.Inheritance;
+using OOP_Practice.Inheritance.Animals;
+using OOP_Practice.Inheritance.Companies;
+using OOP_Practice.Inheritance.People;
+using OOP_Practice.Inheritance.Vehicles;
 using OOP_Practice.Polymorphism;
 using System;
 using System.Net.Http.Headers;
@@ -13,6 +17,68 @@ public class Program
 {
 	static void Main(string[] args)
 	{
+		dynamic person = new Person();
+		dynamic employee = new Employee();
+		person.SayHello();
+		employee.SayHello();
+		List<IShape> listshape = new List<IShape>
+		 {
+			 new Triangle(),
+			 new Circle(),
+			 new Square(),
+		 };
+		foreach (IShape shape in listshape)
+		{
+			shape.GetInfo();
+		}
+		
+		Calculator calculator = new Calculator();
+		Console.WriteLine(calculator.Add(2, 3));
+		Console.WriteLine(calculator.Add(2.5, 3.5)); ;
+		Console.WriteLine(calculator.Add("Hello", "World"));
+
+		List<Shape> shapes = new List<Shape>();
+		Ractangle ractangle1 = new Ractangle(5,4);
+        Console.WriteLine("Area of ractangle " + ractangle1.Area());
+		Circle circle1 = new Circle(3);
+		Console.WriteLine("Area of circle " + circle1.Area());
+		shapes.Add(circle1);
+		shapes.Add(ractangle1);
+
+		foreach (Shape shape in shapes)
+		{
+			Console.WriteLine(shape.Area()); ;
+		}
+
+		List<IPlayable> Players = new List<IPlayable>()
+		{
+			new FootballPlayer(),
+			new Guitarist()
+		};
+
+        foreach (var playable in Players)
+        {
+            playable.Play();
+        }
+
+
+        Manager manager2 = new Manager();
+		Developer developer = new Developer();
+		manager2.ManagedTeamSize = 10;
+		manager2.Work();
+		developer.ProgrammingLanguage = "C#";
+		developer.Work();
+
+		Animal[] animals = new Animal[]
+		{
+			new Dog(),
+			new Cat()
+		};
+		foreach (var animal in animals)
+		{
+			animal.MakeSound();
+		}
+
 		Manager manager1 = new Manager();
 		manager1.SayHello();
 		manager1.Work();
@@ -122,8 +188,8 @@ public class Program
 		Guitarist guitarist = new Guitarist();
 		guitarist.Play();
 
-		Person person = new Person();
-		Console.WriteLine("person name " + person.Name + "person age " + person.Age);
+		Person person4 = new Person();
+		Console.WriteLine("person name " + person4.Name + "person age " + person4.Age);
 		person.SayHello();
 		person.CelebrateBirthday();
 

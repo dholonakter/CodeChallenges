@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP_Practice.Abstract;
+namespace OOP_Practice.Inheritance.Companies;
 
-public abstract class Shape
+public class Company
 {
-	public abstract double Area();
+    private protected string CompanyName { get; set; }
 }
-

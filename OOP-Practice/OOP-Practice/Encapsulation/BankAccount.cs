@@ -10,7 +10,7 @@ namespace OOP_Practice.Encapsulation
 	public class BankAccount
 	{
 		#region Fields
-		private string? _account_holder;
+		//private string? _account_holder;
 		private decimal _balance;
 		#endregion
 		#region Properties

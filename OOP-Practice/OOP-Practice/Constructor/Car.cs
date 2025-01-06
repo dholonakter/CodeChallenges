@@ -15,13 +15,26 @@ public class Car
     #endregion
 
     #region properties
-    public string Make { get; set; }
-    public string Model { get; set; }
-    public int Year { get; set; }
-    #endregion
+    public string Make
+    {
+        get { return _make; }
+        set { _make = value; }
+    }
+	public string Model
+	{
+		get { return _model; }
+		set { _model = value; }
+	}
+	public int Year
+	{
+		get { return _year; }
+		set { _year = value; }
+	}
 
-    #region Method
-    public void DisplayInfo()
+	#endregion
+
+	#region Method
+	public void DisplayInfo()
     {
         Console.WriteLine(" Make " + Make + " Model " + Model + "Year " + Year);
     }

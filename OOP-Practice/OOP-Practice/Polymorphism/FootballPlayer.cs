@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace OOP_Practice.Polymorphism;
 
-public class FootballPlayer
+public class FootballPlayer:IPlayable
 {
 	public void Play()
 	{
