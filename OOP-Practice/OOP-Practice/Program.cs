@@ -17,6 +17,8 @@ public class Program
 {
 	static void Main(string[] args)
 	{
+		Product product = new Product("Ärticle-1", 2222, 20);
+
 		dynamic person = new Person();
 		dynamic employee = new Employee();
 		person.SayHello();
@@ -31,15 +33,15 @@ public class Program
 		{
 			shape.GetInfo();
 		}
-		
+
 		Calculator calculator = new Calculator();
 		Console.WriteLine(calculator.Add(2, 3));
 		Console.WriteLine(calculator.Add(2.5, 3.5)); ;
 		Console.WriteLine(calculator.Add("Hello", "World"));
 
 		List<Shape> shapes = new List<Shape>();
-		Ractangle ractangle1 = new Ractangle(5,4);
-        Console.WriteLine("Area of ractangle " + ractangle1.Area());
+		Ractangle ractangle1 = new Ractangle(5, 4);
+		Console.WriteLine("Area of ractangle " + ractangle1.Area());
 		Circle circle1 = new Circle(3);
 		Console.WriteLine("Area of circle " + circle1.Area());
 		shapes.Add(circle1);
@@ -56,40 +58,40 @@ public class Program
 			new Guitarist()
 		};
 
-        foreach (var playable in Players)
-        {
-            playable.Play();
-        }
-
-
-        Manager manager2 = new Manager();
-		Developer developer = new Developer();
-		manager2.ManagedTeamSize = 10;
-		manager2.Work();
-		developer.ProgrammingLanguage = "C#";
-		developer.Work();
-
-		Animal[] animals = new Animal[]
+		foreach (var playable in Players)
 		{
+			playable.Play();
+			//      }
+
+
+			Manager manager2 = new Manager();
+			Developer developer = new Developer();
+			manager2.ManagedTeamSize = 10;
+			manager2.Work();
+			developer.ProgrammingLanguage = "C#";
+			developer.Work();
+
+			Animal[] animals = new Animal[]
+			{
 			new Dog(),
 			new Cat()
-		};
-		foreach (var animal in animals)
-		{
-			animal.MakeSound();
-		}
+			};
+			foreach (var animal in animals)
+			{
+				animal.MakeSound();
+			}
 
-		Manager manager1 = new Manager();
-		manager1.SayHello();
-		manager1.Work();
-		manager1.LeadTeam();
-		Vehicle vehicle = new Vehicle();
-		vehicle.StartEngine();
-		ElectricCar electricCar = new ElectricCar();
-		electricCar.StartEngine();
+			Manager manager1 = new Manager();
+			manager1.SayHello();
+			manager1.Work();
+			manager1.LeadTeam();
+			Vehicle vehicle = new Vehicle();
+			vehicle.StartEngine();
+			ElectricCar electricCar = new ElectricCar();
+			electricCar.StartEngine();
 
-		Customer customer = new Customer();
-		customer.BankAccounts = new List<BankAccount>()
+			Customer customer = new Customer();
+			customer.BankAccounts = new List<BankAccount>()
 		{
 			 new BankAccount("dola",100),
 			 new BankAccount("saki",50),
@@ -97,106 +99,107 @@ public class Program
 			 new BankAccount("taki",70),
 		};
 
-		customer.Withdraw(20, customer.BankAccounts[0]);
-		customer.Deposit(50, customer.BankAccounts[1]);
+			customer.Withdraw(20, customer.BankAccounts[0]);
+			customer.Deposit(50, customer.BankAccounts[1]);
 
-		foreach (var item in customer.BankAccounts)
-		{
-			Console.WriteLine(item.AccountHolder + item.Balance);
-        }
-
-
-		Department department = new Department("Scherpthe");
-		department.PrintName();
-		Manager manager = new Manager();
-		manager.EmplyeeName = "Dola";
-		manager.EmplyeeID = 10;
-		manager.EmployeeInfo();
-
-		Dog dog = new Dog("Rox");
-		dog.Bark();
-
-		Product product = new Product("artcle1", 20);
-		Product product1 = new Product("artcle1", 1, 21);
-		Product product2 = new Product();
-		product2.ProductName = "article3";
-
-		Library.AddBook();
-
-		Circle circle = new Circle { Radius = 5 };
-		Ractangle ractangle = new Ractangle { Height = 10, Width = 20 };
-		Console.WriteLine("Area of circle" + circle.Area());
-		Console.WriteLine("Area of ractangle" + ractangle.Area());
+			foreach (var item in customer.BankAccounts)
+			{
+				Console.WriteLine(item.AccountHolder + item.Balance);
+			}
 
 
-		Person person1 = new Person("Dola", 20);
-		Console.WriteLine("Before Update" + person1.Age);
-		person1.UpdatePerson(person1);
-		Console.WriteLine("After Update" + person1.Age);
+			Department department = new Department("Scherpthe");
+			department.PrintName();
+			Manager manager = new Manager();
+			manager.EmplyeeName = "Dola";
+			manager.EmplyeeID = 10;
+			manager.EmployeeInfo();
 
-		MathHelper.Add(10, 2);
-		MathHelper.Divide(10, 2);
-		MathHelper.Multiply(10, 2);
+			Dog dog = new Dog("Rox");
+			dog.Bark();
 
-		Book book1 = new Book
-		{
-			Title = "Good book",
-			Author = "James clear",
-			Price = 20
-		};
-		Console.WriteLine("Book " + book1.Title + "Author" + book1.Author + "Price" + book1.Price);
+			Product product = new Product("artcle1", 20);
+			Product product1 = new Product("artcle1", 1, 21);
+			Product product2 = new Product();
+			product2.ProductName = "article3";
 
-		Book book2 = new Book(book1);
-		Console.WriteLine("Book " + book2.Title + "Author" + book2.Author + "Price" + book2.Price);
+			Library.AddBook();
+
+			Circle circle = new Circle { Radius = 5 };
+			Ractangle ractangle = new Ractangle { Height = 10, Width = 20 };
+			Console.WriteLine("Area of circle" + circle.Area());
+			Console.WriteLine("Area of ractangle" + ractangle.Area());
 
 
-		StudentGC gc = new StudentGC();
-		gc.Name = "Alice";
-		gc.Age = 20;
+			Person person1 = new Person("Dola", 20);
+			Console.WriteLine("Before Update" + person1.Age);
+			person1.UpdatePerson(person1);
+			Console.WriteLine("After Update" + person1.Age);
 
-		BankAccount account = new BankAccount("Dholon", 100);
-		account.Deposit(500);
-		account.Withdraw(400);
-		Console.WriteLine(" ÄccountName " + account.AccountHolder + " Balance " + account.Balance);
+			MathHelper.Add(10, 2);
+			MathHelper.Divide(10, 2);
+			MathHelper.Multiply(10, 2);
 
-		Car car = new Car();
-		car.Make = "Peugo";
-		car.Model = "208";
-		car.Year = 2021;
-		car.DisplayInfo();
+			Book book1 = new Book
+			{
+				Title = "Good book",
+				Author = "James clear",
+				Price = 20
+			};
+			Console.WriteLine("Book " + book1.Title + "Author" + book1.Author + "Price" + book1.Price);
 
-		Person FirstPerson = new Person("Dholon", 10);
+			Book book2 = new Book(book1);
+			Console.WriteLine("Book " + book2.Title + "Author" + book2.Author + "Price" + book2.Price);
 
-		Person SecondPerson = new Person("Ripa", 20);
 
-		Person ThirdPerson = new Person("Nisa", 25);
+			StudentGC gc = new StudentGC();
+			gc.Name = "Alice";
+			gc.Age = 20;
 
-		Student FirstStudent = new Student();
+			BankAccount account = new BankAccount("Dholon", 100);
+			account.Deposit(500);
+			account.Withdraw(400);
+			Console.WriteLine(" ÄccountName " + account.AccountHolder + " Balance " + account.Balance);
 
-		FirstStudent.SayHello();
-		FirstStudent.Study();
+			Car car = new Car();
+			car.Make = "Peugo";
+			car.Model = "208";
+			car.Year = 2021;
+			car.DisplayInfo();
 
-		FirstPerson.CelebrateBirthday();
-		FirstPerson.SayHello();
-		SecondPerson.SayHello();
-		SecondPerson.CelebrateBirthday();
-		ThirdPerson.SayHello();
-		ThirdPerson.CelebrateBirthday();
+			Person FirstPerson = new Person("Dholon", 10);
 
-		FootballPlayer footballPlayer = new FootballPlayer();
-		footballPlayer.Play();
-		Guitarist guitarist = new Guitarist();
-		guitarist.Play();
+			Person SecondPerson = new Person("Ripa", 20);
 
-		Person person4 = new Person();
-		Console.WriteLine("person name " + person4.Name + "person age " + person4.Age);
-		person.SayHello();
-		person.CelebrateBirthday();
+			Person ThirdPerson = new Person("Nisa", 25);
 
-		gc = null;
-		GC.Collect();
-		GC.WaitForPendingFinalizers();
+			Student FirstStudent = new Student();
 
-		Console.WriteLine("End of Main method");
+			FirstStudent.SayHello();
+			FirstStudent.Study();
+
+			FirstPerson.CelebrateBirthday();
+			FirstPerson.SayHello();
+			SecondPerson.SayHello();
+			SecondPerson.CelebrateBirthday();
+			ThirdPerson.SayHello();
+			ThirdPerson.CelebrateBirthday();
+
+			FootballPlayer footballPlayer = new FootballPlayer();
+			footballPlayer.Play();
+			Guitarist guitarist = new Guitarist();
+			guitarist.Play();
+
+			Person person4 = new Person();
+			Console.WriteLine("person name " + person4.Name + "person age " + person4.Age);
+			person.SayHello();
+			person.CelebrateBirthday();
+
+			gc = null;
+			GC.Collect();
+			GC.WaitForPendingFinalizers();
+
+			Console.WriteLine("End of Main method");
+		}
 	}
 }
