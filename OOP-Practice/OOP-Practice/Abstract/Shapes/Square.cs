@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP_Practice;
+namespace OOP_Practice.Abstract.Shapes;
 
-public class FootballPlayer
+public class Square:IShape
 {
-	public void Play()
+	public void GetInfo()
 	{
-		Console.WriteLine("Playing the football");
+		Console.WriteLine("This is a Square");
 	}
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP_Practice;
+namespace OOP_Practice.Inheritance.People;
 
 public class Person
 {
@@ -15,7 +15,6 @@ public class Person
 	{
 		get { return _name; }
 		private set { _name = value; }
-
 	}
 
 	public int Age
@@ -36,7 +35,7 @@ public class Person
 
 
 	}
-
+	//Parameterless constructor
 	public Person()
 	{
 		Name = "Unknown";
@@ -51,12 +50,21 @@ public class Person
 
 	public virtual void SayHello()
 	{
-		Console.WriteLine("Hello my name is " + Name);
+		Console.WriteLine("Hello my name is " + Name + "my age is" + Age);
 	}
+
+	public virtual void Introduce()
+	{
+        Console.WriteLine("Hello");
+    }
 
 	public void CelebrateBirthday()
 	{
 		Age += 1;
 		Console.WriteLine("Happy birthday, you are now " + Age + " years old");
+	}
+	public void UpdatePerson(Person person)
+	{
+		person.Age += 1;
 	}
 }
