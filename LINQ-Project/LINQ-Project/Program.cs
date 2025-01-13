@@ -72,7 +72,28 @@ public class Program
 		{
             Console.WriteLine(result);
         }
+		//note- Standard query operators in query syntax is converted into extension methods at compile time. So both are same.
+
+		//Delegate
+		Func<int, int, int> sum = delegate (int a, int b) { return a + b; };
+		Func<int, int, int> sum1=(a,b)=>a+b;
+
+	    Func<Student, bool>? example1=delegate (Student s) { return s.Age > 12 && s.Age < 20; };
+		Func<Student, bool>? example2 = s=>s.Age > 12 && s.Age > 20;
+		Func<Student, bool>? example3 = (s) => { return s.Age > 12 && s.Age > 20; };
+
+		Console.WriteLine(sum(3,5));
+
+		//Delegate further, Query operator and Method syntax
+
+		var items_list = new List<string>()
+		{
+			"book", "Pen", "rubber", "pencil"
+		};
+		var found_todolist = items_list.Contains("Pen");
+        Console.WriteLine(found_todolist);
 
 
-	}
+
+    }
 }
