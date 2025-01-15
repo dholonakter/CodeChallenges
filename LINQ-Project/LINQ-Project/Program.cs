@@ -65,7 +65,7 @@ public class Program
 
 		IEnumerable<string>? results = from langauge in tutorials where langauge.Contains("Tutorials") select langauge;
 		//method syntax
-		var result1 = tutorials.Where(s => s.Contains("Tutorials"));
+		///var result1 = tutorials.Where(s => s.Contains("Tutorials"));
 
 
 		foreach (var result in results)
