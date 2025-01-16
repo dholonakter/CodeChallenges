@@ -9,7 +9,7 @@ public class Program
 	{
 		Person FirstPerson = new Person("Dholon", 10);
 
-		Person SecondPerson = new Person("Ripa", 20);
+		 Person SecondPerson = new Person("Ripa", 20);
 
 		Person ThirdPerson = new Person("Nisa", 25);
 
