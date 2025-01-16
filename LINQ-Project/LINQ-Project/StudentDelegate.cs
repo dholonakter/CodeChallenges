@@ -4,12 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OOP_Practice;
+namespace LINQ_Project;
+delegate bool FindStudent(Student std);
 
-public class FootballPlayer
+public class StudentDelegate
 {
-	public void Play()
-	{
-		Console.WriteLine("Playing the football");
-	}
+
 }
+
