@@ -28,21 +28,21 @@ public class Program
 		}
 		// finding the teenange students
 
-		var teenageStudents= from student_list in studentArray
-							 where student_list.Age>=12 && student_list.Age <= 20
-							 select student_list;
+		var teenageStudents = from student_list in studentArray
+							  where student_list.Age >= 12 && student_list.Age <= 20
+							  select student_list;
 
 		var teenageStudents1 = studentArray.Where(s => s.Age >= 12 && s.Age <= 19).ToList<Student>();
 
-		Console.WriteLine("List of teenage student" +teenageStudents.Count());
+		Console.WriteLine("List of teenage student" + teenageStudents.Count());
 
 		foreach (Student student in teenageStudents)
 		{
-            Console.WriteLine("Name" + student.StudentName + student.Age);
-        }
+			Console.WriteLine("Name" + student.StudentName + student.Age);
+		}
 
-        //Data Source
-        string[] names = { "dola", "steve", "Jay", "Akash" };
+		//Data Source
+		string[] names = { "dola", "steve", "Jay", "Akash" };
 
 		//LINQ query Syntax
 		var myLinqQuery = from name in names
@@ -70,19 +70,19 @@ public class Program
 
 		foreach (var result in results)
 		{
-            Console.WriteLine(result);
-        }
+			Console.WriteLine(result);
+		}
 		//note- Standard query operators in query syntax is converted into extension methods at compile time. So both are same.
 
 		//Delegate
 		Func<int, int, int> sum = delegate (int a, int b) { return a + b; };
-		Func<int, int, int> sum1=(a,b)=>a+b;
+		Func<int, int, int> sum1 = (a, b) => a + b;
 
-	    Func<Student, bool>? example1=delegate (Student s) { return s.Age > 12 && s.Age < 20; };
-		Func<Student, bool>? example2 = s=>s.Age > 12 && s.Age > 20;
+		Func<Student, bool>? example1 = delegate (Student s) { return s.Age > 12 && s.Age < 20; };
+		Func<Student, bool>? example2 = s => s.Age > 12 && s.Age > 20;
 		Func<Student, bool>? example3 = (s) => { return s.Age > 12 && s.Age > 20; };
 
-		Console.WriteLine(sum(3,5));
+		Console.WriteLine(sum(3, 5));
 
 		//Delegate further, Query operator and Method syntax
 
@@ -91,9 +91,9 @@ public class Program
 			"book", "Pen", "rubber", "pencil"
 		};
 		var found_todolist = items_list.Contains("Pen");
-        Console.WriteLine(found_todolist);
+		Console.WriteLine(found_todolist);
 
 
 
-    }
+	}
 }
