@@ -66,17 +66,24 @@ public class Program
 	static string GetStringWithFIveChar()
 	{
 		List<string> words = new List<string> { "apple", "banana", "grape", "peach" };
-		var find_words = words.Where(word => word.Length == 5).ToList();
+		try
+		{
+			var find_word = words.SingleOrDefault(word => word.Length == 5);
+			if (find_word == null)
+			{
+				throw new Exception("no words match with exactly 5 chars");
+			}
 
-		if (find_words.Count == 1)
-		{
-			return find_words[0];
+			return find_word;
+
 		}
-		else
+		catch (InvalidOperationException ex)
 		{
-			return null;
+			throw new Exception(ex.Message);
 		}
+
 	}
+
 
 	//--------------------Practice-6------------------------------------
 	static void GetNumbersGreaterThanTwenty()
